@@ -194,7 +194,6 @@
 				163D24AA4C29DC7724492844 /* Pods-HelloReact-tvOSTests.debug.xcconfig */,
 				AEC0FC3AA8712AC6C1628C9D /* Pods-HelloReact-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
