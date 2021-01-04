@@ -1,6 +1,7 @@
 import React, { Component } from 'react';  
 import { Alert, AppRegistry, Button, StyleSheet, View } from 'react-native';  
-  
+const CleverTap = require('clevertap-react-native'); 
+
 export default class ButtonBasics extends Component {  
     
     onPressButton() {  
@@ -22,19 +23,7 @@ export default class ButtonBasics extends Component {
                         title="Press Me"  
                         color="#009933"  
                     />  
-                </View>  
-                <View style={styles.multiButtonContainer}>  
-                    <Button  
-                        onPress={this.onPressButton}  
-                        title="A disabled button"  
-                        disabled={true}  
-                    />  
-                    <Button  
-                        onPress={this.onPressButton}  
-                        title="OK!"  
-                        color="#009933"  
-                    />  
-                </View>  
+                </View> 
             </View>  
         );  
     }  
