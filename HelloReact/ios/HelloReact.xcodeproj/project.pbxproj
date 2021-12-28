@@ -114,7 +114,6 @@
 				9AEE23F54B8EE57BD5B6C6C0 /* Pods-HelloReact-HelloReactTests.debug.xcconfig */,
 				7F008A56E4BEF66C5FF54047 /* Pods-HelloReact-HelloReactTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -202,6 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1210;
+				ORGANIZATIONNAME = "Aditi Agrawal";
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
