@@ -1,9 +1,7 @@
 
 # React Native Example
 
-Built a simple **Hello World** React Native Application for iOS and Android operating systems.
-
-Environment setup - https://reactnative.dev/docs/0.71/environment-setup#node--watchman
+Built a simple React Native Application for iOS and Android operating systems.
 
 ## Install dependencies
 
@@ -21,7 +19,7 @@ brew install watchman
 
 ### Android Specific steps 
 
-1. Java Development kit
+1. Install Java Development kit
    
 ```
 brew install --cask zulu@17
@@ -37,25 +35,26 @@ brew info --cask zulu@17
 
   ```
   npx react-native init myprojectname
+  //or
   npx react-native@latest init myprojectname
   ```
 - Build the iOS App
   -  Navigate to the iOS folder and run `pod install` to install the iOS dependencies CocoaPods manages.
   -  Start packager
+  
     Open the terminal and start the metro bundler
   
      ```
      yarn start
-     or
+     //or
      npm start
      ```
   - Run the app via Xcode
     
     Open Xcode, choose the App workspace(with an extension .xcworkspace)
 
-  - Running the app via the terminal
-    Run the following command
-    
+  - Running the app via cli
+      
     ```
     yarn ios
     //or
@@ -64,11 +63,12 @@ brew info --cask zulu@17
 
 - Build the Android App
   - Start packager
+    
       Open the terminal and start the metro bundler
     
      ```
      yarn start
-     or
+     //or
      npm start
      ```
 
