@@ -12,12 +12,12 @@ brew install node
 brew install watchman
 ```
 
-### iOS Specific steps
+### iOS Specific dependencies
  
 1. Install the latest version of Xcode from Mac App Store
 2. Install CocoaPods for dependency management. How to install CocoaPods - https://guides.cocoapods.org/using/getting-started.html
 
-### Android Specific steps 
+### Android Specific dependencies 
 
 1. Install Java Development kit
    
@@ -31,18 +31,23 @@ brew info --cask zulu@17
    - Android SDK Platform
    - Android Emulator for testing purposes
 
+Follow the guide [here](https://developer.android.com/studio/install) for installing Android Studio on your machine. 
+
 ## Create a new Application
 
   ```
   npx react-native init myprojectname
   //or
   npx react-native@latest init myprojectname
+  //or
+  npx react-native@X.XX.X init myprojectname --version X.XX.X
+
   ```
 - Build the iOS App
   -  Navigate to the iOS folder and run `pod install` to install the iOS dependencies CocoaPods manages.
   -  Start packager
   
-    Open the terminal and start the metro bundler
+     Open the terminal and start the metro bundler by running the following command. 
   
      ```
      yarn start
@@ -64,7 +69,7 @@ brew info --cask zulu@17
 - Build the Android App
   - Start packager
     
-      Open the terminal and start the metro bundler
+     Open the terminal and start the metro bundler by running the following command.
     
      ```
      yarn start
@@ -74,7 +79,7 @@ brew info --cask zulu@17
 
   - Run the app via Android Studio
     
-    Open Android Studio, choose your project, and open the `/android` folder. The editor will take a while to finish configuring the project. Now, choose which device you want to run your app at the top of the IDE, to the left of the "play" icon. Click on the "play" icon to build the project. 
+    Open Android Studio, choose your project and open the `/android` folder. The editor will take a while to finish configuring the project. Now, choose which device you want to run your app at the top of the IDE, to the left of the "play" icon. Click on the "play" icon to build the project. 
       
     
   - Run the app via cli
