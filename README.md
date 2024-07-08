@@ -40,7 +40,7 @@ Follow the guide [here](https://developer.android.com/studio/install) for instal
   //or
   npx react-native@latest init myprojectname
   //or
-  npx react-native@X.XX.X init myprojectname --version X.XX.X
+  npx react-native init myprojectname --version X.XX.X
 
   ```
 - Build the iOS App
@@ -94,4 +94,7 @@ Follow the guide [here](https://developer.android.com/studio/install) for instal
 
 # References
 
-- https://reactnative.dev/docs/set-up-your-environment
+- Environment Setup Guide - https://reactnative.dev/docs/environment-setup 
+- Getting Started Guide - https://reactnative.dev/docs/getting-started 
+- React native Archive(0.59 or below) Guide - https://archive.reactnative.dev/docs/getting-started
+
