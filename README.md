@@ -63,7 +63,7 @@ Follow the guide [here](https://developer.android.com/studio/install) for instal
     ```
     yarn ios
     //or
-    npm  run ios
+    npm run ios
     ```
 
 - Build the Android App
@@ -87,7 +87,7 @@ Follow the guide [here](https://developer.android.com/studio/install) for instal
      ```
     yarn android
     //or
-    npm  run android
+    npm run android
     ```
     
     
