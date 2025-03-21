@@ -1,0 +1,40 @@
+# Node dependencies
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+
+# Logs
+**/*.log
+npm-debug.log*
+
+# Build artifacts (React Native + JS)
+**/android/.gradle/
+**/android/app/build/
+**/ios/Pods/
+**/ios/build/
+*.xcworkspace
+*.xcodeproj
+
+# Metro bundler cache
+**/.expo/
+**/.expo-shared/
+**/dist/
+**/__generated__/
+
+# TypeScript
+**/*.tsbuildinfo
+
+# Misc
+.DS_Store
+Thumbs.db
+**/coverage/
+**/*.snap
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.*.local
+
+# IDE/Editor settings
+**/.vscode/
+**/.idea/
