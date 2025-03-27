@@ -85,6 +85,8 @@ brew install watchman
    yarn ios
    #or
    npm run ios
+   #or
+   npx react-native run-ios
    ```
 
 ### Build the Android App
@@ -107,6 +109,8 @@ brew install watchman
    yarn android
    #or
    npm run android
+   #or
+   npx react-native run-android
    ```
 
 ## References
