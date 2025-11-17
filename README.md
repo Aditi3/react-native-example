@@ -112,6 +112,102 @@ brew install watchman
    #or
    npx react-native run-android
    ```
+   
+# Expo + EAS Build Guide
+
+This guide covers how to create an Expo project, configure EAS, generate native projects, run on devices/emulators, and build development/simulator binaries.
+
+## 🚀 1. Create a New Expo App
+
+```
+npx create-expo-app MyFirstApp
+cd MyFirstApp
+```
+
+## ⚙️ 2. Configure EAS Build
+
+```
+eas build:configure
+```
+
+- Initializes EAS Build for your project
+- Creates or updates eas.json
+- Connects your project to your Expo account
+
+## 📦 3. Build for Android (Development)
+```
+eas build -p android --profile development
+```
+
+Builds an Android development binary using the development profile from eas.json.
+
+## 🍏 4. Build for iOS (Development)
+
+```
+eas build -p ios --profile development
+```
+Builds an iOS development binary.
+
+## 🖥️ 5. Add iOS Simulator Build Profile (Optional)
+
+```
+Add a simulator profile to eas.json:
+
+{
+  "build": {
+    "development": {
+      "distribution": "internal"
+    },
+    "simulator": {
+      "simulator": true
+    }
+  }
+}
+```
+
+Then build:
+
+eas build -p ios --profile simulator
+
+Produces an iOS Simulator-compatible build.
+
+## 🛠️ 6. Generate Native iOS/Android Projects (Prebuild)
+
+### iOS
+```
+npx expo prebuild -p ios
+```
+
+### Android
+```npx expo prebuild -p android```
+
+### Clean & regenerate both
+
+```
+npx expo prebuild --clean
+```
+
+- Generates/updates ios/ and android/ directories when using Expo with native modules or custom builds.
+
+## ▶️ 7. Start Expo (Managed Workflow)
+
+```
+npx expo start
+```
+
+Starts Metro bundler, opens Expo Dev Tools, and lets you launch on device/emulator.
+
+## 📱 8. Run the App
+
+### iOS
+```
+npx expo run:ios
+```
+
+### Android
+```
+npx expo run:android
+```
 
 ## References
 
