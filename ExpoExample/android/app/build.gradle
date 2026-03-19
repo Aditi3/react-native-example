@@ -148,6 +148,12 @@ android {
 }
 
 dependencies {
+// @generated begin react-native-play-services-analytics - expo prebuild (DO NOT MODIFY) sync-0fb74d6ffa05561283c474bf7c5476d16c082d7d
+
+      implementation 'com.google.android.gms:play-services-analytics:18.0.1'
+      implementation 'com.android.installreferrer:installreferrer:2.2'
+    
+// @generated end react-native-play-services-analytics
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
 
