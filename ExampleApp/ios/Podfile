@@ -7,11 +7,24 @@ require Pod::Executable.execute_command('node', ['-p',
 
 platform :ios, min_ios_version_supported
 prepare_react_native_project!
+use_modular_headers!
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
   use_frameworks! :linkage => linkage.to_sym
+end
+
+# Work around a broken path in RNFBAnalytics.podspec published in some versions.
+rnfb_analytics_podspec = File.join(__dir__, '..', 'node_modules', '@react-native-firebase', 'analytics', 'RNFBAnalytics.podspec')
+if File.exist?(rnfb_analytics_podspec)
+  podspec_content = File.read(rnfb_analytics_podspec)
+  bad_path = "File.join('..', 'app', 'package.json')"
+  fixed_path = "File.join(__dir__, '..', 'app', 'package.json')"
+  if podspec_content.include?(bad_path)
+    Pod::UI.puts 'Patching RNFBAnalytics.podspec path bug'
+    File.write(rnfb_analytics_podspec, podspec_content.gsub(bad_path, fixed_path))
+  end
 end
 
 target 'ExampleApp' do

@@ -10,9 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-firebase/analytics": "^23.8.8",
+    "@react-native-firebase/app": "^23.8.8",
     "react": "19.0.0",
     "react-native": "0.78.1",
-    "react-native-adjust": "file:react_native_sdk"
+    "react-native-adjust": "^5.5.0",
+    "react-native-google-mobile-ads": "^16.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
