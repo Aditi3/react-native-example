@@ -179,7 +179,9 @@ npx expo prebuild -p ios
 ```
 
 ### Android
-```npx expo prebuild -p android```
+```
+npx expo prebuild -p android
+```
 
 ### Clean & regenerate both
 
@@ -205,6 +207,7 @@ npx expo run:ios
 ```
 
 ### Android
+
 ```
 npx expo run:android
 ```
