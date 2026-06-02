@@ -29,7 +29,9 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      ["@config-plugins/react-native-adjust"],
+      [
+        "@config-plugins/react-native-adjust"
+      ],
       "expo-router",
       [
         "expo-splash-screen",
@@ -39,10 +41,14 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser"
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": false
     },
     "extra": {
       "router": {},
